@@ -1,0 +1,248 @@
+.ip_main_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.overlay_container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.2;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #ffffff 40px
+    ),
+    repeating-linear-gradient(#81c78455, #81c784);
+}
+
+.content_container {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container_header {
+  color: var(--main-font-color);
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+}
+
+.top_starting_header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_btns_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main_content {
+  width: 100%;
+  height: 450px;
+}
+
+.milestone_bar {
+  width: 800px;
+  min-height: 50px;
+  margin: 30px auto 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.milestone_progress_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #d2dae2;
+}
+
+.filler_milestone_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #0e7f41;
+  transition: 0.5s ease-in-out;
+}
+
+.milestone_tomb_marks {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-40%);
+}
+
+.milestone_tomb {
+  width: 50px;
+  height: 50px;
+  background-color: #d2dae2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e7f41;
+}
+
+.active_tomb {
+  background-color: #0e7f41;
+  color: white;
+  transition-delay: 0.5s;
+}
+
+.prompt_text_container {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  margin: 10px auto;
+  text-align: center;
+  color: rgb(154, 145, 145);
+}
+
+.button_container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px auto 0 auto;
+}
+
+.nav_btn {
+  width: 150px;
+  margin: 5px 10px;
+}
+
+.column_headers {
+  color: #2c3e50;
+  font-size: 1.6em;
+  font-weight: 700;
+  font-family: "ManRope", sans-serif;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.partition_info {
+  width: 90%;
+  max-width: 850px;
+  text-align: center;
+  margin-top: 10px;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selector_box {
+  width: 90%;
+  height: 300px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated_icon {
+  font-size: 7em;
+  animation: slide_cont 2s infinite ease-in-out;
+  margin-bottom: 30px;
+}
+
+@keyframes slide_cont {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ss container styles */
+.ss_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* is container styles */
+.is_container {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+/* grn container styles */
+.grn_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* final confirmation styles */
+.final_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.guideline_paragraph {
+  margin-bottom: 20px;
+  max-width: 550px;
+  text-align: center;
+  color: #2c3e50;
+  opacity: 0.6;
+}

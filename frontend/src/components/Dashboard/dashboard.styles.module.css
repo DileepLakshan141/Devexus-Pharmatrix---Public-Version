@@ -1,0 +1,30 @@
+.dashboard_container {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_switcher {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  margin-left: 20px;
+}
+
+.content_switcher::-webkit-scrollbar {
+  width: 6px;
+  background-color: #d3d3d3;
+}
+
+.content_switcher::-webkit-scrollbar-thumb {
+  width: 6px;
+  background-color: #14911a;
+  border-radius: 3px;
+}

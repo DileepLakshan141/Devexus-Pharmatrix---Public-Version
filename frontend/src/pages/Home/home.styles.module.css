@@ -1,0 +1,349 @@
+.main_container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.hs_content_container {
+  z-index: 12;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero_section {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #43bb51,
+    #32a145,
+    #218739,
+    #116f2e,
+    #015722
+  );
+  position: relative;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hs_placeholder_cont {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+
+.chrome_box_img {
+  width: 750px;
+  animation: bouncer 2s infinite ease-in-out;
+}
+
+@keyframes bouncer {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header_row {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_links {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.header_links > li {
+  font-family: "Manrope";
+  font-weight: 500;
+  color: white;
+  height: 30px;
+  border-radius: 15px;
+  padding: 5px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.header_links > li:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.header_links > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hs_content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  margin-top: 200px;
+  z-index: 10;
+}
+
+.hs_sub_heading {
+  font-family: "Manrope";
+  color: white;
+  font-size: 3em;
+  font-weight: 900;
+  text-transform: capitalize;
+  width: 850px;
+  line-height: 1em;
+}
+
+.hs_main_heading {
+  margin-top: 35px;
+  font-family: "Roboto";
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hs_support_text {
+  font-family: "Manrope";
+  color: white;
+  width: 600px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.hs_btn_contaienr {
+  margin-top: 30px;
+}
+
+/* ---------------- FEATURES SECTION ---------------- */
+.features_section {
+  width: 100%;
+  min-height: 200px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fs_headline {
+  margin-top: 20px;
+  font-family: "Manrope";
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.fs_hard_text {
+  font-weight: 900;
+  color: #116f2e;
+  text-transform: uppercase;
+  margin-left: 14px;
+}
+
+.fs_content_container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+/* ---------------- DEMO SECTION ---------------- */
+.demo_section {
+  width: 100%;
+  min-height: 200px;
+  background-color: #f1f2f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.ds_headline {
+  font-family: "Manrope";
+  font-size: 2em;
+  font-weight: 800;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ds_description {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer_section {
+  width: 100%;
+  background-color: #0d0d0d;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 1px solid #222;
+}
+
+.footer_text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer_credit {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #999;
+}
+
+.footer_credit a {
+  color: #64b5f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer_credit a:hover {
+  color: #90caf9;
+}
+
+/* ---------------- RESPONSIVE BREAKPOINTS ---------------- */
+
+@media (max-width: 1024px) {
+  .chrome_box_img {
+    width: 500px;
+  }
+
+  .hs_sub_heading {
+    font-size: 2.5em;
+    width: 90%;
+  }
+
+  .hs_support_text {
+    width: 80%;
+  }
+
+  .ds_headline {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_section {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hs_content {
+    padding-left: 0;
+    margin-top: 50px;
+    align-items: center;
+    z-index: 5;
+  }
+
+  .hs_sub_heading {
+    font-size: 2em;
+    width: 100%;
+  }
+
+  .hs_support_text {
+    font-size: 0.95em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .chrome_box_img {
+    position: static;
+    width: 400px;
+    margin-top: 40px;
+  }
+
+  .header_row {
+    justify-content: center;
+  }
+
+  .header_links > li {
+    padding: 5px 15px;
+    margin: 0 10px;
+    font-size: 0.9em;
+  }
+
+  .ds_headline {
+    width: 100%;
+    font-size: 1.6em;
+  }
+
+  .ds_description {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_section {
+    padding: 20px 10px;
+  }
+
+  .hs_sub_heading {
+    font-size: 1.6em;
+  }
+
+  .hs_main_heading {
+    font-size: 2em;
+  }
+
+  .chrome_box_img {
+    width: 280px;
+  }
+
+  .fs_headline {
+    font-size: 1.5em;
+  }
+
+  .fs_content_container {
+    padding: 0 10px;
+  }
+
+  .demo_section {
+    padding: 30px 15px;
+  }
+
+  .ds_headline {
+    font-size: 1.4em;
+  }
+
+  .footer_text,
+  .footer_credit {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,44 @@
+.feature_card_container {
+  width: 240px;
+  height: 280px;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgb(230, 230, 230);
+}
+
+.fc_image_container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f1f2f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fc_img {
+  width: 40px;
+}
+
+.fc_headline {
+  font-family: "Manrope";
+  font-weight: 700;
+  width: 90%;
+  text-align: center;
+}
+
+.fc_description {
+  margin-top: 10px;
+  font-size: 0.8em;
+  width: 80%;
+  text-align: center;
+  color: grey;
+}

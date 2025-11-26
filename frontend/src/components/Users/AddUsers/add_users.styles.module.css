@@ -1,0 +1,29 @@
+.add_user_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.btn_container_add_supp {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto 0 auto;
+}
+
+.btn_add_supplier {
+  width: 180px;
+  margin: 10px;
+}
+
+.form_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}

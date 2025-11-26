@@ -1,0 +1,181 @@
+:root {
+  --main-font-color: #2c3a47;
+}
+
+.dash_main_container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.opacity_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.2;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #ffffff 40px
+    ),
+    repeating-linear-gradient(#81c78455, #81c784);
+}
+
+.headline_row {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_header {
+  color: var(--main-font-color);
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+}
+
+.date_range_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  scale: 0.8;
+}
+
+.insights_row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.insights_toggler {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  border: 2px dashed #a4b0be;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.insights_toggler:hover {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.toggler_btn_text {
+  color: green;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.product_sales_category {
+  width: 100%;
+  min-height: 280px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #dfe4ea;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product_filter_cont {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 5px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.recent_sales_cont {
+  padding: 5px;
+  height: 100%;
+  width: 52%;
+  background-color: white;
+  z-index: 1;
+  border-radius: 5px;
+  border: 2px solid #dfe4ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.recent_grns_cont {
+  padding: 5px;
+  height: 100%;
+  width: 47%;
+  margin-left: 20px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 5px;
+  border: 2px solid #dfe4ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.date_picker {
+  scale: 0.8;
+  font-size: 0.9em;
+  transform: translateY(-40px);
+  height: 120%;
+}
+
+.circ_progress_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quick_actions_cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.sales_chart {
+  width: 700px;
+  height: 300px;
+}
+
+.payment_method_chart {
+  width: 450px;
+  height: 300px;
+}
+
+.dash_partition_container {
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 2px;
+  padding: 0 5px;
+}
